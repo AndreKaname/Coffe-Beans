@@ -1,0 +1,253 @@
+body {
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+.button {
+    color: #1c1c1c;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #f1f1f1;
+    font-size: .9em;
+    border-radius: 3px;
+}
+    /*Nav*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5d453f;
+}
+
+nav > a {
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Yellowtail, serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../midia/coffee-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+}
+
+header p {
+    margin-bottom: 2em;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 10px 20px;
+    background-color: #5d453f;
+    color: #ffffff;
+}
+
+#about h2 {
+    color: #ffffff;
+}
+
+#about p {
+    margin-bottom: 2.5em;
+    max-height: 1000px;
+}
+
+#about .button {
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#service div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+    /*Picture*/
+
+#picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#picture h2 {
+    margin-bottom: 20px;
+}
+
+#picture img {
+    width: 100%;
+}
+
+/*Contact*/ 
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+#contact div img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#contact h2 {
+    color: #000000;
+}
+
+#contact p {
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #5d453f;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+@media screen and (min-width:768px) {
+    
+    /*nav*/
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*Header*/
+
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    #about {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #service {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #service h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #service div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #picture {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    #picture h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #picture img {
+        width: 33.3333333%;
+    }
+
+    #contact  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contact h2, #contact p {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
